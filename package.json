@@ -1,0 +1,25 @@
+{
+  "name": "template-node-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "template-node-typescript": "dist/index.js"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "node .",
+    "dev": "ts-node ./src/index.ts",
+    "dev-server": "nodemon ./src/index.ts",
+    "upgrade-typescript": "yarn add --dev typescript@latest && yarn add --dev @types/node@latest && yarn add --dev ts-node@latest"
+  },
+  "keywords": [],
+  "author": "Lucasion",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
